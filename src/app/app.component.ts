@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'list2022';
+  list:any[]=[];
+  addTask(item:string)
+  {
+    console.warn(item);
+    this.list.push({id:this.list.length,name:item})
+
+  }
 }
